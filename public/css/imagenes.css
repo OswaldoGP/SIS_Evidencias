@@ -1,0 +1,27 @@
+.pdf-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 20px;
+    background: white;
+    height: 100%;
+}
+
+.previewPdf {
+    width: 100%;
+    min-height: 120px;
+    object-fit: contain;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 10px;
+    background: #fafafa;
+}
+
+.firmaPreview {
+    width: 250px;
+    max-height: 180px;
+    object-fit: contain;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 10px;
+    background: #fafafa;
+}

@@ -1,0 +1,291 @@
+.evidencia-card {
+    border-radius: 24px;
+    overflow: hidden;
+    background: white;
+}
+
+.evidencia-header {
+    background: linear-gradient(135deg, #f8fbff, #eef5ff);
+    border-bottom: 1px solid #e8eef7;
+    padding: 25px;
+}
+
+.estadoLegend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.estadoCard {
+    background: #ffffff;
+    border: 1px solid #edf0f5;
+    border-radius: 16px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.estadoCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.estadoCard h6 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.estadoCard small {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.estadoIcon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.estadoIcon.aprobado {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.estadoCard .estadoIcon.pendiente {
+    background-color: #ffedd5 !important;
+    color: #ea580c !important;
+}
+
+.estadoIcon.rechazada {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.estadoIcon.vacio {
+    background: #e2e8f0;
+    color: #64748b;
+}
+
+.estadoIcon.asignada {
+    background: #e0e7ff;
+    color: #4f46e5;
+}
+
+table thead th {
+    background: #012970;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    border: none;
+    padding: 16px;
+    text-align: center;
+}
+
+table tbody tr {
+    transition: 0.2s;
+}
+
+table tbody tr:hover {
+    background: #f8fbff;
+}
+
+table tbody td {
+    padding: 14px 10px;
+    vertical-align: middle;
+}
+
+.estadoBtn {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.estadoBtn.aprobado {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.estadoBtn.aprobado:hover {
+    background: #16a34a;
+    color: #ffffff;
+}
+
+.estadoBtn.pendiente {
+    background: #fef9c3;
+    color: #ca8a04;
+}
+
+.estadoBtn.pendiente:hover {
+    background: #ca8a04;
+    color: #ffffff;
+}
+
+.estadoBtn.rechazada {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.estadoBtn.rechazada:hover {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+.estadoBtn.vacio {
+    background: #e2e8f0;
+    color: #64748b;
+}
+
+.estadoBtn.vacio:hover {
+    background: #64748b;
+    color: #ffffff;
+}
+
+.estadoBtn.asignada {
+    background: #e0e7ff;
+    color: #4f46e5;
+}
+
+.progress-custom {
+    height: 10px;
+    border-radius: 20px;
+    background: #e9eef5;
+    overflow: hidden;
+}
+
+.progress-custom .progress-bar {
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.fachero-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    margin-bottom: 1rem;
+}
+
+.fachero-card:hover {
+    transform: translateY(-2px);
+}
+
+.fachero-card hr {
+    margin: 0.5rem 0 1rem;
+    opacity: 0.3;
+}
+
+.fachero-input {
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.fachero-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+    outline: none;
+}
+
+.fachero-textarea {
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    resize: vertical;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cbd5e1;
+    transition: 0.3s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.switch input:checked+.slider {
+    background-color: #0d6efd;
+}
+
+.switch input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.label-na {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #334155;
+}
+
+.badge-fachero {
+    background: #eef2ff;
+    color: #1e40af;
+    font-size: 0.7rem;
+    border-radius: 30px;
+    padding: 4px 8px;
+}
+
+.row-fachero {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.col-fachero {
+    flex: 1;
+    min-width: 250px;
+}

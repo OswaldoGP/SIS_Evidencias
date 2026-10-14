@@ -1,0 +1,226 @@
+/* ============================================================
+   SEMESTRES - CSS general
+   Contiene estilos de:
+     - index  → cards de semestres
+     - create → formulario
+     - edit   → formulario
+     - show   → eliminar
+   ============================================================ */
+
+/* ---------- Card principal (create, edit, show) ---------- */
+.semestre-card {
+    border-radius: 22px;
+    overflow: hidden;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.semestre-card:hover {
+    transform: translateY(-6px);
+}
+
+/* En show no queremos el hover, así que lo desactivamos solo ahí */
+.semestre-card.static:hover {
+    transform: none;
+}
+
+/* ---------- Header de la card ---------- */
+.semestre-header {
+    background: linear-gradient(135deg, #f8fbff, #eef5ff);
+    border-bottom: 1px solid #e8eef7;
+    padding: 30px;
+}
+
+.semestre-header.danger {
+    background: linear-gradient(135deg, #fff8f8, #fff1f1);
+    border-bottom: 1px solid #f3dcdc;
+}
+
+/* ---------- Icono del header ---------- */
+.header-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #0d6efd, #4da3ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    box-shadow: 0 10px 25px rgba(13, 110, 253, 0.18);
+}
+
+.header-icon.danger {
+    background: linear-gradient(135deg, #dc3545, #ff6b7a);
+    box-shadow: 0 10px 25px rgba(220, 53, 69, 0.18);
+}
+
+/* ---------- Inputs ---------- */
+.custom-input .input-group-text,
+.custom-input .form-control,
+.custom-select,
+.custom-date {
+    min-height: 50px;
+    border-radius: 12px !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.15);
+}
+
+.custom-select {
+    border: 1px solid #dee2e6;
+}
+
+.custom-date {
+    padding-left: 15px;
+}
+
+/* ---------- Labels ---------- */
+label {
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+/* ---------- Botones ---------- */
+.btn {
+    transition: 0.25s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ============================================================
+   INDEX - Cards de semestres
+   ============================================================ */
+.semestre-title {
+    color: #012970;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.semestre-carrera {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6c757d;
+}
+
+.custom-switch {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.info-box {
+    background: #f8fbff;
+    border: 1px solid #e9f0fa;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.status-badge {
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-active {
+    background: #eafaf1;
+    color: #198754;
+    border: 1px solid #c7f1d9;
+}
+
+.status-inactive {
+    background: #fff1f2;
+    color: #dc3545;
+    border: 1px solid #ffd2d7;
+}
+
+.acciones-box {
+    background: #fcfcfd;
+    border: 1px solid #edf0f5;
+    border-radius: 16px;
+    padding: 18px;
+}
+
+.acciones-title {
+    font-weight: 700;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: #f5f9ff;
+}
+
+
+/* ============================================================
+   SHOW - Eliminar
+   ============================================================ */
+.delete-alert {
+    background: #fff8f8;
+    border: 1px solid #ffd9dd;
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.alert-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    background: rgba(220, 53, 69, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dc3545;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+/* En show, el info-box cambia de color y estructura */
+.semestre-show .info-box {
+    background: #fafbfd;
+    border: 1px solid #edf0f5;
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.semestre-show .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 0;
+    align-items: flex-start;
+}
+
+.semestre-show .label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.semestre-show .value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #212529;
+}

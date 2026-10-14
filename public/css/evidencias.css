@@ -1,0 +1,550 @@
+.evidencia-card {
+    border-radius: 24px;
+    overflow: hidden;
+    background: white;
+}
+
+.evidencia-header {
+    background: linear-gradient(135deg, #f8fbff, #eef5ff);
+    border-bottom: 1px solid #e8eef7;
+    padding: 25px;
+}
+
+.evidencia-card .estadoLegend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.evidencia-card .estadoCard {
+    background: #ffffff;
+    border: 1px solid #edf0f5;
+    border-radius: 16px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.evidencia-card .estadoCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.evidencia-card .estadoCard h6 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.evidencia-card .estadoCard small {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.evidencia-card .estadoIcon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.evidencia-card .estadoIcon.aprobado {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.evidencia-card .estadoIcon.pendiente {
+    background: #fef9c3;
+    color: #ca8a04;
+}
+
+.evidencia-card .estadoIcon.rechazada {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.evidencia-card .estadoIcon.vacio {
+    background: #e2e8f0;
+    color: #64748b;
+}
+
+.evidencia-card .estadoIcon.asignada {
+    background: #e0e7ff;
+    color: #4f46e5;
+}
+
+.evidencia-card table thead th {
+    background: #012970;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    border: none;
+    padding: 16px;
+    text-align: center;
+}
+
+.evidencia-card table tbody tr {
+    transition: 0.2s;
+}
+
+.evidencia-card table tbody tr:hover {
+    background: #f8fbff;
+}
+
+.evidencia-card table tbody td {
+    padding: 14px 10px;
+    vertical-align: middle;
+}
+
+.evidencia-card .estadoBtn {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.evidencia-card .estadoBtn.aprobado {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.evidencia-card .estadoBtn.aprobado:hover {
+    background: #16a34a;
+    color: #ffffff;
+}
+
+.evidencia-card .estadoBtn.pendiente {
+    background: #fef9c3;
+    color: #ca8a04;
+}
+
+.evidencia-card .estadoBtn.pendiente:hover {
+    background: #ca8a04;
+    color: #ffffff;
+}
+
+.evidencia-card .estadoBtn.rechazada {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.evidencia-card .estadoBtn.rechazada:hover {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+.evidencia-card .estadoBtn.vacio {
+    background: #e2e8f0;
+    color: #64748b;
+}
+
+.evidencia-card .estadoBtn.vacio:hover {
+    background: #64748b;
+    color: #ffffff;
+}
+
+.evidencia-card .estadoBtn.asignada {
+    background: #e0e7ff;
+    color: #4f46e5;
+}
+
+.evidencia-card .progress-custom {
+    height: 10px;
+    border-radius: 20px;
+    background: #e9eef5;
+    overflow: hidden;
+}
+
+.evidencia-card .progress-custom .progress-bar {
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.archivo-aprobado {
+    border: 2px solid #198754;
+    background: #f0fdf4;
+    border-radius: 14px;
+    padding: 12px;
+}
+
+.badge-aprobado {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, .25);
+    font-size: 13px;
+}
+
+.card-header-evidencia {
+    background: linear-gradient(135deg, #f8fbff, #eef5ff);
+}
+
+.btn-danger,
+.btn-outline-danger {
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.badge {
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.style-dropzone input[type="file"] {
+    display: none !important;
+}
+
+.style-dropzone .row.align-items-center {
+    background-color: #f8f9fa;
+    border: 1px dashed #dee2e6;
+    border-radius: 0.5rem;
+}
+
+#contenedor_tarjetas_unidades {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+#contenedor_tarjetas_unidades>div {
+    flex: 1 1 0% !important;
+    min-width: 100px;
+    width: auto !important;
+}
+
+.card-unidad-check {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid #dee2e6 !important;
+    padding: 12px 8px !important;
+    font-size: 13px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-unidad-check:hover {
+    border-color: #0d6efd !important;
+    background-color: #f8f9fa;
+}
+
+.card-unidad-check.active {
+    border-color: #198754 !important;
+    background-color: #f0fdf4;
+}
+
+.card-unidad-check i,
+.card-unidad-check svg {
+    font-size: 20px !important;
+    margin-bottom: 6px;
+}
+
+.unidad-bloqueada {
+    cursor: not-allowed !important;
+    opacity: 0.55;
+    background-color: #f8f9fa !important;
+}
+
+.unidad-bloqueada:hover {
+    border-color: #dee2e6 !important;
+    background-color: #f8f9fa !important;
+}
+
+.rac-edit-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.rac-edit-badge {
+    min-width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+.rac-edit-file-box {
+    flex: 1;
+}
+
+.rac-edit-file-box .form-control,
+.rac-edit-file {
+    min-height: 36px !important;
+    font-size: 13px;
+    padding: 4px 10px;
+}
+
+.rac-edit-na-box {
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-top: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.rac-edit-na-box .form-check-input {
+    margin-top: 0;
+    cursor: pointer;
+    width: 0.9em;
+    height: 0.9em;
+}
+
+.rac-edit-na-box .form-check-label {
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.rac-edit-file:disabled {
+    background-color: #e9ecef !important;
+    cursor: not-allowed;
+    opacity: 0.75;
+}
+
+.motivo-no-unidad-box {
+    background-color: #f8f9fa;
+    border: 1px dashed #ced4da;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 6px !important;
+}
+
+.motivo-no-unidad-box textarea {
+    resize: vertical;
+    min-height: 80px;
+    font-size: 13px;
+}
+
+.motivo-no-unidad-box textarea:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.evidencia-eliminada {
+    display: none !important;
+}
+
+.dropzone-body-collapse {
+    transition: max-height 0.35s ease, opacity 0.3s ease;
+    max-height: 500px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.dropzone-body-collapse.collapsed {
+    max-height: 0px !important;
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+.btn-minimizar {
+    transition: transform 0.25s ease;
+}
+
+.btn-minimizar.rotated {
+    transform: rotate(-180deg);
+}
+
+.archivo-cargado-item {
+    animation: fadeInItem 0.25s ease-out forwards;
+}
+
+.btn-eliminar-archivo:hover {
+    background-color: #fde8e8 !important;
+    color: #dc3545 !important;
+}
+
+@keyframes fadeInItem {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    #contenedor_tarjetas_unidades {
+        flex-wrap: wrap !important;
+    }
+
+    #contenedor_tarjetas_unidades>div {
+        flex: 1 1 45% !important;
+    }
+
+    .rac-edit-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .rac-edit-na-box {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+/* ==========================================================================
+   RÚBRICAS POR UNIDAD (mismo patrón que instrumentos, en tono ámbar)
+   ========================================================================== */
+.helper-dropzone-pdf {
+    display: none !important;
+}
+
+.rubrica-unidad {
+    background: #fffdf5;
+    border: 1px solid #fde9b0;
+    border-radius: 14px;
+    padding: 12px 14px 14px;
+}
+
+.rubrica-unidad-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.badge-unidad-rubrica {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fcd34d;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.rubrica-unidad-body {
+    background: #fff8e1;
+    border: 1px dashed #f5d98a;
+    border-radius: 12px;
+    margin: 0;
+    padding: 10px 12px 12px 4px;
+}
+
+.btn-rubrica {
+    color: #b45309;
+    background: #ffffff;
+    border: 1px solid #f59e0b;
+    transition: all 0.2s ease;
+}
+
+.btn-rubrica:hover,
+.btn-rubrica:focus {
+    color: #ffffff;
+    background: #f59e0b;
+    border-color: #f59e0b;
+}
+
+.btn-rubrica:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.rubrica-unidad .archivo-cargado-item {
+    border-color: #fde9b0 !important;
+}
+
+.rubrica-unidad .archivo-cargado-item a:hover {
+    color: #b45309 !important;
+}
+
+
+/* ==========================================================================
+   INSTRUMENTOS DE EVALUACIÓN (mismo lenguaje visual que rúbricas, en verde)
+   Nota: Bootstrap usa !important en bg-white / bg-light / border-light-subtle,
+   por eso estos overrides también lo llevan.
+   ========================================================================== */
+.style-dropzone {
+    background-color: #f7fef9 !important;
+    border-color: #bbf7d0 !important;
+}
+
+.style-dropzone .row.align-items-center {
+    background-color: #ecfdf5 !important;
+    border: 1px dashed #86efac;
+    border-radius: 12px;
+}
+
+.style-dropzone .btn-minimizar {
+    background-color: #dcfce7 !important;
+}
+
+.style-dropzone .btn-minimizar:hover {
+    background-color: #bbf7d0 !important;
+}
+
+.style-dropzone .btn-outline-success {
+    color: #15803d;
+    background: #ffffff;
+    border: 1px solid #22c55e;
+    transition: all 0.2s ease;
+}
+
+.style-dropzone .btn-outline-success:hover,
+.style-dropzone .btn-outline-success:focus {
+    color: #ffffff;
+    background: #22c55e;
+    border-color: #22c55e;
+}
+
+.style-dropzone .btn-outline-success:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.style-dropzone .archivo-cargado-item {
+    border-color: #bbf7d0 !important;
+}
+
+.style-dropzone .archivo-cargado-item a:hover {
+    color: #15803d !important;
+}

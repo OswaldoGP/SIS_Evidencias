@@ -1,0 +1,115 @@
+.docentes-card {
+    border-radius: 22px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.docentes-header {
+    background: linear-gradient(135deg, #f8fbff, #eef5ff);
+    border-bottom: 1px solid #e8eef7;
+    padding: 28px;
+}
+
+.usuario-card {
+    border-radius: 22px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.usuario-header {
+    background: linear-gradient(135deg, #f8fbff, #eef5ff);
+    border-bottom: 1px solid #e8eef7;
+    padding: 30px;
+}
+
+.usuario-header.warning {
+    background: linear-gradient(135deg, #fffdf5, #fff7db);
+    border-bottom: 1px solid #f5ebc8;
+}
+
+.header-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #0d6efd, #4da3ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+    box-shadow: 0 10px 25px rgba(13, 110, 253, 0.18);
+    flex-shrink: 0;
+}
+
+.header-icon.warning {
+    background: linear-gradient(135deg, #ffc107, #ffd95e);
+    color: #212529;
+    box-shadow: 0 10px 25px rgba(255, 193, 7, 0.18);
+}
+
+.custom-input {
+    min-height: 50px;
+    border-radius: 12px !important;
+    border: 1px solid #dee2e6;
+    padding-left: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.15);
+}
+
+.btn {
+    transition: 0.25s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.20);
+}
+
+.btn-warning:hover {
+    box-shadow: 0 10px 20px rgba(255, 193, 7, 0.20);
+}
+
+label {
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.perfil-docente-box {
+    min-height: 76px;
+}
+
+.phone-prefix {
+    border-radius: 12px 0 0 12px;
+    border-right: none;
+    min-height: 50px;
+}
+
+.phone-input {
+    border-left: none;
+    border-radius: 0 12px 12px 0 !important;
+}
+
+@media (max-width: 768px) {
+    .usuario-header,
+    .docentes-header {
+        padding: 24px;
+    }
+
+    .header-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 23px;
+    }
+
+    .card-body {
+        padding: 24px !important;
+    }
+}

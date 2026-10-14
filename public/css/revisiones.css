@@ -1,0 +1,82 @@
+.revision-card {
+    transition: all 0.3s ease;
+}
+
+.revision-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.form-check-input {
+    width: 3rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.badge {
+    font-size: 0.80rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.rev-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.2s;
+    background: #f8fafc;
+}
+
+.rev-input:focus {
+    outline: none;
+    border-color: #0d6efd;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+}
+
+.rev-label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #475569;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rev-field {
+    margin-bottom: 1.25rem;
+}
+
+.rev-field:last-child {
+    margin-bottom: 0;
+}
+
+.rev-icon-wrap {
+    position: relative;
+}
+
+.rev-icon-wrap .rev-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    pointer-events: none;
+    font-size: 1rem;
+}
+
+.rev-icon-wrap .rev-input {
+    padding-left: 2.75rem;
+}
